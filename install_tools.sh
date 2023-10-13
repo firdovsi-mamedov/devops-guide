@@ -3,6 +3,8 @@
 sudo apt update
 sudo apt upgrade -y
 
+sudo apt install curl wget net-tools -y
+
 if command -v git &>/dev/null; then
     echo "Git is already installed..."
 else
@@ -30,3 +32,5 @@ else
   sudo systemctl start postgresql
   sudo systemctl enable postgresql
 fi
+
+sudo apt install neovim -y
